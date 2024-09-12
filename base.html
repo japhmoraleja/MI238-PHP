@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creatinine Clearance Calculator</title>
+</head>
+<body>
+    <h1>Creatinine Clearance (CrCl) Calculator</h1>
+    <form method="POST" action="">
+        <label for="age">Age (years):</label><br>
+        <input type="number" name="age" id="age" required><br><br>
+
+        <label for="weight">Weight (kg):</label><br>
+        <input type="number" step="any" name="weight" id="weight" required><br><br>
+
+        <label for="serum_creatinine">Serum Creatinine (mg/dL):</label><br>
+        <input type="number" step="any" name="serum_creatinine" id="serum_creatinine" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <select name="gender" id="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br><br>
+
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>
